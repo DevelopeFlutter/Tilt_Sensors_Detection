@@ -1,0 +1,163 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.aws_server"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:7:5-81
+11-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:7:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:8:5-80
+12-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:8:22-77
+13    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+13-->C:\Users\ABS\StudioProjects\aws\android\app\src\debug\AndroidManifest.xml:5:5-79
+13-->C:\Users\ABS\StudioProjects\aws\android\app\src\debug\AndroidManifest.xml:5:22-77
+14    <!--
+15         The INTERNET permission is required for development. Specifically,
+16         the Flutter tool needs it to communicate with the running application
+17         to allow setting breakpoints, to provide hot reload, etc.
+18    -->
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:4:5-66
+19-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:4:22-64
+20    <uses-permission android:name="android.permission.CAMERA" />
+20-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:5:5-65
+20-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:5:22-62
+21    <uses-permission android:name="android.permission.FLASHLIGHT" />
+21-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:6:5-69
+21-->C:\Users\ABS\StudioProjects\aws\android\app\src\main\AndroidManifest.xml:6:22-66
+22    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+22-->[:camera_android] C:\Users\ABS\StudioProjects\aws\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-71
+22-->[:camera_android] C:\Users\ABS\StudioProjects\aws\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-68
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\ABS\.gradle\caches\transforms-3\6ec2c823b2ddfa9d4aff16fd99b56b89\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:5-79
+23-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\ABS\.gradle\caches\transforms-3\6ec2c823b2ddfa9d4aff16fd99b56b89\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:22-76
+24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+24-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:6:5-75
+24-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:6:22-73
+25    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26
+27    <application
+28        android:name="android.app.Application"
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.7.0] C:\Users\ABS\.gradle\caches\transforms-3\5e083c06c9925c2309f02468fc66e376\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+32        android:label="aws_server"
+33        android:supportsRtl="true" >
+33-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\ABS\.gradle\caches\transforms-3\200fcc4554075301aa81b1f47bb2eb4c\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:7:18-44
+34        android:requestLegacyExternalStorage="true"
+35        <activity
+36            android:name="com.example.aws_server.MainActivity"
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+38            android:exported="true"
+39            android:hardwareAccelerated="true"
+40            android:launchMode="singleTop"
+41            android:theme="@style/LaunchTheme"
+42            android:windowSoftInputMode="adjustResize" >
+43
+44            <!--
+45                 Specifies an Android theme to apply to this Activity as soon as
+46                 the Android process has started. This theme is visible to the user
+47                 while the Flutter UI initializes. After that, this theme continues
+48                 to determine the Window background behind the Flutter UI.
+49            -->
+50            <meta-data
+51                android:name="io.flutter.embedding.android.NormalTheme"
+52                android:resource="@style/NormalTheme" />
+53
+54            <intent-filter>
+55                <action android:name="android.intent.action.MAIN" />
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+58            </intent-filter>
+59        </activity>
+60        <!--
+61             Don't delete the meta-data below.
+62             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+63        -->
+64        <meta-data
+65            android:name="flutterEmbedding"
+66            android:value="2" />
+67
+68        <uses-library
+68-->[androidx.window:window:1.0.0-beta04] C:\Users\ABS\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+69            android:name="androidx.window.extensions"
+69-->[androidx.window:window:1.0.0-beta04] C:\Users\ABS\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+70            android:required="false" />
+70-->[androidx.window:window:1.0.0-beta04] C:\Users\ABS\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+71        <uses-library
+71-->[androidx.window:window:1.0.0-beta04] C:\Users\ABS\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+72            android:name="androidx.window.sidecar"
+72-->[androidx.window:window:1.0.0-beta04] C:\Users\ABS\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0-beta04] C:\Users\ABS\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+74
+75        <activity
+75-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:10-269
+76            android:name="com.amazonaws.mobile.auth.userpools.ForceChangePasswordActivity"
+76-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:152-230
+77            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+77-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:20-90
+78            android:label="@string/title_activity_force_change_password"
+78-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:91-151
+79            android:screenOrientation="portrait" />
+79-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:231-267
+80        <activity
+80-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:10-258
+81            android:name="com.amazonaws.mobile.auth.userpools.ForgotPasswordActivity"
+81-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:146-219
+82            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+82-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:20-90
+83            android:label="@string/title_activity_forgot_password"
+83-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:91-145
+84            android:screenOrientation="portrait" />
+84-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:220-256
+85        <activity
+85-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:10-242
+86            android:name="com.amazonaws.mobile.auth.userpools.SignUpActivity"
+86-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:138-203
+87            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+87-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:20-90
+88            android:label="@string/title_activity_sign_up"
+88-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:91-137
+89            android:screenOrientation="portrait" />
+89-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:204-240
+90        <activity
+90-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:10-235
+91            android:name="com.amazonaws.mobile.auth.userpools.MFAActivity"
+91-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:134-196
+92            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+92-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:20-90
+93            android:label="@string/title_activity_mfa"
+93-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:91-133
+94            android:screenOrientation="portrait" />
+94-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:197-233
+95        <activity
+95-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:10-257
+96            android:name="com.amazonaws.mobile.auth.userpools.SignUpConfirmActivity"
+96-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:146-218
+97            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+97-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:20-90
+98            android:label="@string/title_activity_sign_up_confirm"
+98-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:91-145
+99            android:screenOrientation="portrait" />
+99-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\ABS\.gradle\caches\transforms-3\3616e2fe899ef8587fe70396df860f57\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:219-255
+100        <activity
+100-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\ABS\.gradle\caches\transforms-3\200fcc4554075301aa81b1f47bb2eb4c\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:9-234
+101            android:name="com.amazonaws.mobile.auth.ui.SignInActivity"
+101-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\ABS\.gradle\caches\transforms-3\200fcc4554075301aa81b1f47bb2eb4c\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:137-195
+102            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+102-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\ABS\.gradle\caches\transforms-3\200fcc4554075301aa81b1f47bb2eb4c\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:19-89
+103            android:label="@string/title_activity_sign_in"
+103-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\ABS\.gradle\caches\transforms-3\200fcc4554075301aa81b1f47bb2eb4c\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:90-136
+104            android:screenOrientation="portrait" />
+104-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\ABS\.gradle\caches\transforms-3\200fcc4554075301aa81b1f47bb2eb4c\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:196-232
+105    </application>
+106
+107</manifest>
